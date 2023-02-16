@@ -7,8 +7,11 @@
         <header>
             <h1><a href="/">Tech Blog</a></h1>
         </header>
+        {% for post in posts %}
+            {{ post }}
+        {% endfor %}
 
-        <article>
+        {{ posts }}
             <time>published: 14.02.2023, 12:14</time>
             <h2><a href="">Rock Paper Scissors in Python</a></h2>
             <h3>A Step-by-Step Guide to implement ‘Rock Paper Scissors’ in Python</h3>
@@ -29,9 +32,9 @@
                 But if the opposite is the case then the other player wins. The match will be 
                 drawn if both choose the same option.
             </p>
-        </article>
+        {{ posts }}
 
-        <article>
+        {{ posts }}
             <time>published: 14.06.2014, 12:14</time>
             <h2><a href="">The art of problem-solving in code</a></h2>
             <h3>A three-step guide to developing a problem-solving approach </h3>
@@ -48,6 +51,6 @@
                 Problem-solving isn’t only about solving small problems for interviews; it is 
                 also helpful in building bigger websites that consist of large amounts of code, 
                 which is constructed by taking one step at a time..</p>
-        </article>
+        {{ posts }}
     </body>
 </html>
